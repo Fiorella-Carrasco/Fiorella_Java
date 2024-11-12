@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+:root {
+    --colorc: #882D60;
+    --secundario: #B8729A;
+
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*******************menu navegación*******************/
+#inicio {
+    position: relative;
+    width: 100%;
+}
+body{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+}
+.logo{
+    height: 7vw;
+    width: 22vw;
+}
+
+.menu .lista-contenido {
+    margin-right: 20px;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    margin: 0px 1vw;
+    padding: 0.5vw;
+    color: var(--colorc);
+    font-size: 1.4vw;
+    border-radius: 12px;
+   
+}
+
+.lista li a:hover {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+.lista li a.activo {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+/******************producto***************/
+.cajaUno{
+    width: 100%;
+    margin-bottom: 5vw;
+}
+.esmalteTitulo h2{
+    font-size: 3vw;
+    color: var(--colorc);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5vw;
+}
+.cajaGaleria{
+    position: relative;
+    display: flex;
+    font-size: 100%;
+    padding-top: 0%;
+    padding-right: 2vw;
+    padding-bottom: 0%;
+    padding-left: 2vw;
+    justify-content: space-evenly;
+    margin-bottom: 5vw;
+}
+.tiendaUno{
+    width: 17vw;
+    margin-right: 15px;
+}
+.imagenTienda{
+    width: 100%;
+    height: 17vw;
+}
+.imagenTienda img{
+    width: 100%;
+    height: 17vw
+}
+.coral{
+    margin: 0;
+    height: 9vw;
+    align-content: center;
+    text-align: center;
+    font-size: 1vw;
+}
+.precio{
+    font-weight: bold;
+    font-size: 1.5vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonPrecio{
+    display: flex;
+    border: none;
+    width: 11vw;
+    height: 3vw;
+    border-radius: 2vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorc);
+    color: white;
+    font-size: 1vw;
+}
+.botonTienda{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/******************Galeria***************/
+.galeria{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-bottom: 80px;
+}
+.galeria .cajaImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.galeria .cajaImagenes .imagen{
+    width: 350px;
+    height: 250px;
+    border: 10px solid white;
+    box-shadow: 0 5px 15px var(--secundario);
+    overflow: hidden;
+    cursor: pointer;
+}
+.galeria .cajaImagenes .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.galeria .cajaImagenes .imagen:hover img{
+    transform: scale(1.1);
+}
+.cajaImagenes .popupImagen{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.cajaImagenes .popupImagen span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.cajaImagenes .popupImagen img{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 500px;
+    object-fit: cover;
+}
+@media (max-width: 768px){
+    .cajaImagenes .popupImagen img{
+        width: 95%;
+    }
+}
+    
+
+
+/******************footer***************/
+.cajaFooter{
+    display:flex ;
+    background-color: var(--colorc);
+    width: 100%;
+    height: 20vw;
+    justify-content: space-evenly;
+}
+.cajaAtencion{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAtencion h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAtencion p{
+    font-size: 1.25vw;
+}
+.cajaAviso{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAviso h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAviso p{
+    font-size: 1.25vw;
+}
+.cajaRedes{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaRedes h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.logoRedes{
+display: flex;
+justify-content: center;
+}
+.logoRedes img{
+    width: 4.6vw;
+    height: 4.6vw;
+}

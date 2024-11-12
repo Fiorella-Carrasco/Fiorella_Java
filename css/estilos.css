@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+:root {
+    --colorc: #882D60;
+    --secundario: #B8729A;
+
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*******************menu navegación*******************/
+#inicio {
+    position: relative;
+    width: 100%;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+}
+.logo{
+    height: 7vw;
+    width: 22vw;
+}
+
+.menu .lista-contenido {
+    margin-right: 20px;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    margin: 0px 1vw;
+    padding: 0.5vw;
+    color: var(--colorc);
+    font-size: 1.4vw;
+    border-radius: 12px;
+   
+}
+
+.lista li a:hover {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+.lista li a.activo {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+
+/*******************banner*******************/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 43vw;
+    background: url(../images/banner.jpg);
+    background-repeat: round;
+    margin-top: 4vw;
+    
+}
+
+.banner .boton {
+    position: absolute;
+    margin: 35vw 43vw 7vw 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner .boton a{
+    text-decoration: none;
+}
+
+.banner .boton button{
+    display: flex;
+    width: 14vw;
+    height: 5vw;
+    font-size: 2.3vw;
+    color: white;
+    background-color: var(--colorc);
+    border-radius: 24px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/*******************section uno*******************/
+.seccionUno{
+    width: 100%;
+    padding-top: 5vw;
+    margin-bottom: 5vw;
+}
+.cajaTitulo h2{
+    margin: 0;
+    font-size: 3vw;
+    color: var(--colorc);
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5vw;
+}
+.cajaProductos{
+    position: relative;
+    font-size: 100%;
+    padding-top: 0%;
+    padding-right: 2vw;
+    padding-bottom: 0%;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.productoUno{
+    width: 17vw;
+    margin-right: 15px;
+}
+
+.imagenProducto{
+    width: 100%;
+    height: 18vw;
+}
+
+.imagenProducto img{
+    width: 100%;
+    height: 18vw;
+}
+.coral{
+    margin: 0;
+    height: 9vw;
+    align-content: center;
+    text-align: center;
+    font-size: 1vw;
+}
+.botonPrecio{
+    display: flex;
+    border: none;
+    width: 11vw;
+    height: 3vw;
+    border-radius: 2vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorc);
+    color: white;
+    font-size: 1vw;
+}
+
+.cajaPrecio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.precio{
+    font-weight: bold;
+    font-size: 1.5vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*******************articulo uno*******************/
+.articuloUno{
+    width: 100%;
+    margin-bottom: 5vw;
+}
+.cajaReportaje{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imagenReportaje img{
+    display: flex;
+    width: 30vw;
+    height: 43vw;
+    align-items: center;
+}
+.cajaReportaje .textoReportaje{
+    width: 37vw;   
+    padding-top: 1vw;
+}
+.textoReportaje h3{
+    margin: 0;
+    font-size: 1.5vw;
+    color: var(--secundario);
+    text-align: center;
+}
+.textoReportaje p{
+    font-size: 1.23vw;
+}
+.textoReportaje .destacado{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*****************articulo dos****************/
+.articuloDos{
+    width: 100%;
+    margin-bottom: 5vw;
+}
+.cajaNarracion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.narracion{
+    width: 37vw;   
+    padding-top: 1vw;
+}
+.narracion h3{
+    margin: 0;
+    font-size: 1.5vw;
+    color: var(--secundario);
+    text-align: center;
+}
+.narracion p{
+    font-size: 1.23vw;
+}
+.narracion .destacado{
+    text-transform: uppercase;
+    text-align: center;
+}
+.imagenNarracion img{
+    display: flex;
+    width: 30vw;
+    height: 43vw;
+    align-items: center;
+}
+
+
+/******************articulo 3***************/
+.cajaNoticia{
+    width: 100%;
+    margin-bottom: 5vw;
+}
+#nuevoContenido{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#nuevoContenido h2{
+    color: var(--secundario);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 1.6vw;
+}
+#nuevoContenido p{
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0 2vw;
+    font-size: 1.1vw;
+}
+#nuevoContenido a{
+    color: #fff;
+    position: center;
+    margin: 1vw 2vw 2vw;
+    font-size: 1vw;
+}
+
+.news-item-0{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 45vw;
+    background-image: url(../images/tendencia.png);
+    background-size: cover;
+}
+.news-item-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 45vw;
+    background-image: url(../images/katy.png);
+    background-size: cover;
+}
+.news-item-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 45vw;
+    background-image: url(../images/rosalia.png);
+    background-size: cover;
+}
+
+
+
+/******************footer***************/
+.cajaFooter{
+    display:flex ;
+    background-color: var(--colorc);
+    width: 100%;
+    height: 20vw;
+    justify-content: space-evenly;
+}
+.cajaAtencion{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAtencion h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAtencion p{
+    font-size: 1.25vw;
+}
+.cajaAviso{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAviso h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAviso p{
+    font-size: 1.25vw;
+}
+.cajaRedes{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaRedes h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.logoRedes{
+    display: flex;
+    justify-content: center;
+}
+.logoRedes img{
+    width: 4.6vw;
+    height: 4.6vw;
+}

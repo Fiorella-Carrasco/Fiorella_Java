@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+:root {
+    --colorc: #882D60;
+    --secundario: #B8729A;
+
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*******************menu navegación*******************/
+#inicio {
+    position: relative;
+    width: 100%;
+}
+body{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+}
+.logo{
+    height: 7vw;
+    width: 22vw;
+}
+
+.menu .lista-contenido {
+    margin-right: 20px;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    margin: 0px 1vw;
+    padding: 0.5vw;
+    color: var(--colorc);
+    font-size: 1.4vw;
+    border-radius: 12px;
+   
+}
+
+.lista li a:hover {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+.lista li a.activo {
+    background-color: var(--colorc);
+    color: #fff;
+}
+
+/******************contacto***************/
+
+.contactoTitulo{
+    margin: 0;
+    font-size: 3vw;
+    color: var(--colorc);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.cajaDireccion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vw 11vw;
+}
+.cajaDireccion input{
+    width: 60%;
+    height: 35px;
+}
+.cajaDireccion button{
+    height: 35px;
+    width: 12%;
+    color: #B8729A;
+    border-color: #882D60;
+    cursor: pointer;
+}
+.cajaContacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vw;
+}
+.imagenContacto img{
+    width: 56vw;
+    height: 32.7vw;
+}
+.cajaDecoracion{
+    width: 25vw;
+    border-radius: 1vw;
+    border: 0.25vw solid var(--colorc);
+}
+.cajaSitio h3{
+    font-size: 2.2vw;
+    color: var(--secundario);
+    text-align: center;
+}
+.localizar h4{
+    font-size: 1.7vw;
+    text-align: center;
+}
+.localizar p{
+    font-size: 1.3vw;
+    text-align: center;
+}
+#cajaMap{
+    width: 38vw;
+    height: 50vw;
+}
+#panel{
+    width: 23vw;
+    height: 50vw;
+    overflow: auto;
+}
+
+/******************footer***************/
+.cajaFooter{
+    display:flex ;
+    background-color: var(--colorc);
+    width: 100%;
+    height: 20vw;
+    justify-content: space-evenly;
+}
+.cajaAtencion{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAtencion h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAtencion p{
+    font-size: 1.25vw;
+}
+.cajaAviso{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaAviso h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.cajaAviso p{
+    font-size: 1.25vw;
+}
+.cajaRedes{
+    color: white;
+    width: 25vw;
+    padding-top: 2vw;
+}
+.cajaRedes h4{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-align: center;
+}
+.logoRedes{
+display: flex;
+justify-content: center;
+}
+.logoRedes img{
+    width: 4.6vw;
+    height: 4.6vw;
+}

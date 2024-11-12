@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Glow</title>
+    <link rel="stylesheet" href="../css/estilosPresupuesto.css">
+</head>
+<body>
+    <!--encabezado-->
+    <header id="inicio">
+        <nav class="menu">
+            <div class="cajaLogo">
+                <a href="../index.html"><img class="logo" src="../images/logo%20proyecto.png" alt="logo" width="500" height="144"></a>
+            </div>
+            <div class="lista-contenido">
+                <ul class="lista">
+                    <li><a href="../index.html">Índice</a></li>
+                    <li><a href="../views/producto.html">Producto</a></li>
+                    <li><a href="#" class="activo">Presupuesto</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--banner-->
+        <div class="banner">
+            <div class="boton">
+                <div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Entrada-->
+    <main>
+        <div class="formularioTitulo">
+            <h2>Envíanos un mensaje</h2>
+        </div>
+        
+        <div id="formularioUno">
+            <div class="cajaFormulario">
+                <!--Datos de contacto-->
+                <form class="formulario" id="formulario" novalidate>
+                    <div class="formularioGeneral">
+                        <label class="nombre" for="nombre">Nombre:</label>
+                        <input class="texto" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="15" required>
+                        <span id="nombreError" class="error"></span>
+                        
+                    </div>
+                    <div class="formularioGeneral">
+                        <label class="nombre">Apellido:</label>
+                        <input class="texto" type="text" id="apellidos" name="apellidos" placeholder="Escribe tu apellido" maxlength="40" required>
+                        <span id="apellidosError" class="error"></span>
+                        
+                    </div>
+                    <div class="formularioGeneral">
+                        <label class="nombre">Email:</label>
+                        <input class="texto" type="email" id="email" name="emial" placeholder="Escribe tu Email" required>
+                        <span id="emailError" class="error"></span>
+                        
+                    </div>
+                    <div class="formularioGeneral">
+                        <label class="nombre" for="telefono">Teléfono:</label>
+                        <input class="texto" type="tel" id="telefono" name="telefono" placeholder="Escribe tu telefono" maxlength="9" required>
+                        <span id="telefonoError" class="error"></span>
+                        
+                    </div>
+
+                    <!--presupuesto-->
+                    <div class="cajaPresupuesto">
+                        <!--producto-->
+                        <label for="opciones">Elige un producto: </label>
+                        <select name="oopciones" id="opciones">
+                            <option value="10">valor1</option>
+                            <option value="20">valor2</option>
+                            <option value="30">valor3</option>
+                        </select>
+                    </div>
+                    <div class="cajaPresupuesto">
+                        <!--plazo-->
+                        <label for="plazo">Plazo (en meses):</label>
+                        <input type="number" id="plazo" name="plazo" min="1" max="24" required>
+                    </div>
+                    <div class="cajaPresupuesto">
+                        <!--estras-->
+                        <label>Extras:</label><br>
+                        <input type="checkbox" id="extra1" name="extras" value="10"> Extra 1 - 10€
+                        <input type="checkbox" id="extra2" name="extras" value="20"> Extra 2 - 20€
+                        <input type="checkbox" id="extra3" name="extras" value="30"> Extra 3 - 30€
+                    </div>
+                    <div class="cajaPresupuesto">
+                        <!--presupuesto final-->
+                        <label for="presupuesto">Presupuesto Final:</label>
+                        <input type="text" id="presupuesto" name="presupuesto" readonly>
+                    </div>
+
+                    <div class="cajaCheck">                    
+                        <!--botones de envio-->
+                        <input type="checkbox" id="politica" name="politica" value="aceptar" >
+                        <label for="politica"> Aceptas la política de privacidad. </label>
+                    </div>
+                    <div class="botonEnviar">
+                        <input class="enviar" type="submit" value="enviar">
+                        <input class="borrar" type="reset" value="borrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="cajaFooter">
+            <div class="cajaAtencion">
+                <h4>ATENCIÓN AL CLIENTE</h4>
+                <p>Av. Severo Ochoa 27</p>
+                <p>Teléfono: (+34) 617255191</p> 
+                <p>Email: tienda@nailglow</p>                     
+            </div>
+            <div class="cajaAviso">
+                <h4>INFORMACIÓN LEGAL</h4>
+                <P>Aviso legal</P>
+            </div>
+            <div class="cajaRedes">
+                <h4>SIGUENOS</h4>
+                <div class="logoRedes">
+                    <a href="https://www.instagram.com/">
+                        <img src="../images/instagram.png" alt="logo instagram" width="60" height="60">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="../images/facebook.png" alt="logo facebook" width="60" height="60">
+                    </a>
+                    <a href="https://www.pinterest.es/">
+                        <img src="../images/pinterest.png" alt="logo pinteres" width="60" height="60">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="../images/youtube.png" alt="logo youtube" width="60" height="60">  
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
+
+
+<!--en apellidos e email antes tenian un for-->

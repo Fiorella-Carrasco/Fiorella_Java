@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Glow</title>
+    <link rel="stylesheet" href="../css/estilosContacto.css">
+</head>
+<body>
+    <!--encabezado-->
+    <header id="inicio">
+        <nav class="menu">
+            <div class="cajaLogo">
+                <a href="../index.html"><img class="logo" src="../images/logo%20proyecto.png" alt="logo" width="500" height="144"></a>
+            </div>
+            <div class="lista-contenido">
+                <ul class="lista">
+                    <li><a href="../index.html">Índice</a></li>
+                    <li><a href="../views/producto.html">Producto</a></li>
+                    <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="#" class="activo">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--banner-->
+        <div class="banner">
+            <div class="boton">
+                <div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--contacto-->
+    <main>
+        <div class="contactoTitulo">
+            <h2>Contáctanos</h2>
+        </div>
+        <div>
+            <div class="cajaDireccion">
+                <input type="text" id="origin" placeholder="Ingresa tu ubicación de partida">
+                <button onclick="calculateRoute()">Mostrar Ruta</button>
+            </div>
+            
+            <div class="cajaContacto">
+                <div id="cajaMap"></div>
+                <div id="panel"></div>                               
+                <div class="cajaDecoracion">
+                    <div class="cajaSitio">
+                        <h3>Contácta con nosotros</h3>
+                    </div>
+                    <div class="localizar">
+                        <h4>Localización</h4>
+                        <p>
+                            Av. Severo Ochoa 27 <br>
+                            45519 (Novés)
+                        </p>
+                        <h4>Llamanos</h4>
+                        <p>
+                            (+34) 617255191
+                        </p>
+                        <h4>Email</h4>
+                        <p>
+                            tienda@nailglow
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="cajaFooter">
+            <div class="cajaAtencion">
+                <h4>ATENCIÓN AL CLIENTE</h4>
+                <p>Av. Severo Ochoa 27</p>
+                <p>Teléfono: (+34) 617255191</p> 
+                <p>Email: tienda@nailglow</p>                     
+            </div>
+            <div class="cajaAviso">
+                <h4>INFORMACIÓN LEGAL</h4>
+                <P>Aviso legal</P>
+            </div>
+            <div class="cajaRedes">
+                <h4>SIGUENOS</h4>
+                <div class="logoRedes">
+                    <a href="https://www.instagram.com/">
+                        <img src="../images/instagram.png" alt="logo instagram" width="60" height="60">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="../images/facebook.png" alt="logo facebook" width="60" height="60">
+                    </a>
+                    <a href="https://www.pinterest.es/">
+                        <img src="../images/pinterest.png" alt="logo pinteres" width="60" height="60">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="../images/youtube.png" alt="logo youtube" width="60" height="60">  
+                    </a> 
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMLFwU8GRfo8vqyM9OpORjncizHuCeDvM&loading=async&callback=initMap">
+    </script> 
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
