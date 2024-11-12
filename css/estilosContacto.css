@@ -102,6 +102,7 @@ body{
 .cajaDireccion input{
     width: 60%;
     height: 35px;
+    text-align: center;
 }
 .cajaDireccion button{
     height: 35px;
